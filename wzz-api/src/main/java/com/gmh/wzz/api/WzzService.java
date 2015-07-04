@@ -1,7 +1,5 @@
 package com.gmh.wzz.api;
 
-import java.util.List;
-
 import com.gmh.wzz.api.model.PageList;
 import com.gmh.wzz.api.model.TbWzzInfo;
 import com.gmh.wzz.api.model.TbWzzInfoType;
@@ -21,7 +19,7 @@ public interface WzzService {
 	public String publishInfo(TbWzzInfo info);
 
 	public PageList<TbWzzInfo> findTbWzzInfo(TbWzzInfo condition,
-			long pageIndex, long pageSize);
+			int pageIndex, int pageSize);
 
 	/**
 	 * 查询分类
@@ -29,7 +27,7 @@ public interface WzzService {
 	 * @param condition
 	 * @return
 	 */
-	public List<TbWzzInfoType> findTbWzzInfoType(TbWzzInfoType condition);
+	public PageList<TbWzzInfoType> findTbWzzInfoType(TbWzzInfoType condition, int pageBegin, int pageSize);
 
 	/**
 	 * 分享wifi

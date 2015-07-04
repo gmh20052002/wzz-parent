@@ -9,7 +9,7 @@ public class PageList<T extends Serializable> implements Serializable {
 	
 	private List<T> datas;
 	
-	private long tolalSize = 0;
+	private long totalSize = 0;
 
 	public List<T> getDatas() {
 		return datas;
@@ -19,11 +19,11 @@ public class PageList<T extends Serializable> implements Serializable {
 		this.datas = datas;
 	}
 
-	public long getTolalSize() {
-		return tolalSize;
+	public long getTotalSize() {
+		return totalSize;
 	}
 
-	public void setTolalSize(long tolalSize) {
-		this.tolalSize = tolalSize;
+	public void setTotalSize(long totalSize) {
+		this.totalSize = totalSize;
 	}
 }
